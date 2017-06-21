@@ -5,3 +5,7 @@
 !_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
 !_TAG_PROGRAM_VERSION	5.9~svn20110310	//
 __init__.py	__init__.py	1;"	kind:file	line:1
+app	__init__.py	/^app = Flask(__name__)$/;"	kind:variable	line:2
+display	__init__.py	/^def display(id):$/;"	kind:function	line:12
+index	__init__.py	/^def index():$/;"	kind:function	line:4
+profile	__init__.py	/^def profile(username):$/;"	kind:function	line:8

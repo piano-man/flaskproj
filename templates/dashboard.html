@@ -1,0 +1,42 @@
+{% extends "homepage.html" %}
+
+
+{% block body %}
+
+<div>
+
+  <!-- Nav tabs -->
+  <ul class="nav nav-tabs" role="tablist">
+    <li role="presentation" class="active"><a href="#bio" aria-controls="bio" role="tab" data-toggle="tab">Bio</a></li>
+    <li role="presentation"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">Profile</a></li>
+    <li role="presentation"><a href="#messages" aria-controls="messages" role="tab" data-toggle="tab">Messages</a></li>
+    <li role="presentation"><a href="#settings" aria-controls="settings" role="tab" data-toggle="tab">Settings</a></li>
+  </ul>
+
+  <!-- Tab panes -->
+  <div class="tab-content">
+    <div role="tabpanel" class="tab-pane active " id="bio">
+
+
+            <ul>
+                {% for t in con["topics"] %}
+                <li><a href="{{t[1]}}">{{t[0]}}</a>
+                </li>
+                {% endfor %}
+                
+
+            </ul>
+
+
+
+
+
+    </div>
+    <div role="tabpanel" class="tab-pane fade" id="profile">...</div>
+    <div role="tabpanel" class="tab-pane fade" id="messages">...</div>
+    <div role="tabpanel" class="tab-pane fade" id="settings">...</div>
+  </div>
+
+</div>
+
+{% endblock %}

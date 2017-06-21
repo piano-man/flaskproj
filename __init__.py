@@ -1,9 +1,11 @@
 from flask import Flask,request,render_template
+from content import content
+
+con=content()
 app = Flask(__name__)
 @app.route('/')
-@app.route('/<user>')
-def index(user=None):
-    return render_template("user.html",user=user)
+def index():
+    return render_template("dashboard.html",con=con)
 
 @app.route('/profile/<username>')
 def profile(username):
